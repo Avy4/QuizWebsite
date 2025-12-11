@@ -44,8 +44,6 @@ router.post("/quizSetup.ejs", (req, res) => {
     let {difficulty, num_questions, ranked_option, user} = req.body
     globalUsername = user
     globalIsRanked = ranked_option
-    console.log(ranked_option)
-    console.log(globalIsRanked)
 
     if (ranked_option === "on") {
         difficulty = "hard"
@@ -61,8 +59,6 @@ router.post("/quizSetup.ejs", (req, res) => {
 router.post("/quizPage.ejs", (req, res) => {
     const values = Object.values(req.body)
     const len = values.length
-
-    console.log(globalIsRanked)
 
     let total_correct = 0
     values.forEach((v) => {
