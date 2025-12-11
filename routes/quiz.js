@@ -68,7 +68,7 @@ router.post("/quizPage.ejs", (req, res) => {
     if (globalIsRanked === "on") {
         (async() => {
             try {
-                await mongoose.connect(process.env.MONGO_CONNECTION_STRING, {
+                mongoose.connect(process.env.MONGO_CONNECTION_STRING, {
                     dbName: databaseName
                 });
 
@@ -82,10 +82,6 @@ router.post("/quizPage.ejs", (req, res) => {
 
             catch(e) {
                 console.error(e)
-            }
-
-            finally {
-                client.close();
             }
         })();
     }

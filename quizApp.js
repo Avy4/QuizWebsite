@@ -53,9 +53,6 @@ app.get("/leaderboard.ejs", (req, res) => {
       catch(e) {
         console.error(e)
       }
-      finally {
-        client.close();
-      }
     })();
 })
 
