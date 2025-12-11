@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="./css/styles.css" />
+    <style>
+        fieldset > p {
+            font-family:'Courier New', Courier, monospace;
+            font-weight: bolder;
+        }
+        fieldset > input, label {
+            font-family: "Noto Sans Display", sans-serif;
+        }
+        .category {
+             font-family: "Rampart One", sans-serif;
+        }
+    </style>
+</head>
+<header>
+    <img src="./images/capybara.png" height="80" width="80">
+    <h1>Quiz!</h1> 
+</header>
+<body>
+    <form method="post" action="./quizPage.ejs/">
+        <%- questionHTML %>
+        <input type="submit">
+    </form>
+</body>
+<hr>
+<footer>
+    <p>API Link: <a target="_blank" href="https://opentdb.com">Open Trivia Database!</a> | Avyukth Selvadurai | <a href="./">Home</a> | <a target="_blank" href="https://github.com/Avy4">Github</a></p>
+</footer>
+<hr>
+</html>

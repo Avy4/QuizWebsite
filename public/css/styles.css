@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Nabla&family=Noto+Sans+Display:ital,wght@0,100..900;1,100..900&family=Rampart+One&display=swap');
+
+body {
+    background-color: rgb(187, 81, 70);
+    font-family: "Nabla", system-ui;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div {
+    display: inline-flex;
+    width: 100%;
+
+    font-family: "Rampart One", sans-serif;
+}
+
+.div-inside {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 20px;
+}
+
+.div-center {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    font-family: "Nabla", system-ui;
+    border: 10px, double, white;
+}
+
+footer {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+a:link {
+    color: white;
+}
+
+a:hover {
+    color: orange;
+}
+
+ul {
+    font-family: "Nabla", system-ui;
+    color: white;
+}
+
+ul > li > ul > li {
+    font-family: "Rampart One", sans-serif;
+    color: white;
+}
+
+form {
+    font-family: "Rampart One", sans-serif;
+    color: white;
+}
+
+fieldset > legend {
+    font-family: "Nabla", system-ui;
+}
+
+input, select {
+    border-radius: 10px;
+    padding: 5px;
+    border: 1px solid #ccc;
+
+    font-family: "Rampart One", sans-serif;
+}
+
+input[type] {
+    margin-top: 10px;
+}
+
+caption {
+    font-family: "Nabla", system-ui;
+}
+
+table, tr, th, td {
+    border: 1px solid #ccc;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaderboard!</title>
+
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="./css/styles.css" />
+</head>
+<header>
+    <img src="./images/cat.png" height="80" width="80">
+    <h1>Leaderboard!</h1> 
+</header>
+<body>
+    <div class="div-center">
+        <div class="div-inside">
+            <table>
+                <caption>Top 5 Scores</caption>
+                <thead>
+                    <tr><th>Name</th><th>Score</th></tr>
+                </thead>
+                <tbody>
+                    <%- rawHTML %>
+                </tbody>
+                <tfoot>
+
+                </tfoot>
+            </table>
+        </div>
+    </div>
+</body>
+<hr>
+<footer>
+    <p>API Link: <a target="_blank" href="https://opentdb.com">Open Trivia Database!</a> | Avyukth Selvadurai | <a href="./">Home</a> | <a target="_blank" href="https://github.com/Avy4">Github</a></p>
+</footer>
+<hr>
+</html>

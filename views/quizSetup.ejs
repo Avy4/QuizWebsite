@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Selector!</title>
+
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="./css/styles.css" />
+</head>
+<header>
+    <img src="./images/rabbit.png" height="80" width="80">
+    <h1>Submit Your Preferences!</h1> 
+</header>
+<body>
+    <form method="post" action="./quizSetup.ejs">
+        <fieldset>
+            <legend>Choose Your Settings</legend>
+            <label>Choose Your Difficulty: </label>
+            <select name="difficulty">
+                <option value="easy">Easy</option>
+                <option value="medium">Medium</option>
+                <option value="hard">Hard</option>
+            </select>
+            <br>
+            <label># Of Questions: </label>
+            <input required name="num_questions" type="number" min="10" max="25" value="10">
+            <br>         
+        </fieldset>
+        <fieldset>
+            <legend>Ranked?</legend>
+            <label>This ignores all previous settings.<label>
+            <ul>
+                <li>Difficuly is set to HARD</li>
+                <li>The Number of Questions is set to 20</li>
+            </ul>
+            
+            <label for="ranked_option">Do You Want To Play Ranked?</label>
+            <input name="ranked_option" id="ranked_option" type="checkbox" width="30px">
+            <br>
+
+            <label>Enter Your Username For The Leaderboard: </label>
+            <br>
+            <input name="user" type="text" minlength="1" maxlength="10" value="QuizWhiz">
+            <br> 
+        </fieldset>
+        <input type="submit">
+        <input type="reset">
+    </form>
+</body>
+<hr>
+<footer>
+    <p>API Link: <a target="_blank" href="https://opentdb.com">Open Trivia Database!</a> | Avyukth Selvadurai | <a href="./">Home</a> | <a target="_blank" href="https://github.com/Avy4">Github</a></p>
+</footer>
+<hr>
+</html>
