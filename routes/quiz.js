@@ -65,10 +65,11 @@ router.post("/quizPage.ejs", (req, res) => {
         total_correct += Number(v)
     })
 
+    console.log(globalIsRanked === "on")
     if (globalIsRanked === "on") {
         (async() => {
             try {
-                mongoose.connect(process.env.MONGO_CONNECTION_STRING, {
+                await mongoose.connect(process.env.MONGO_CONNECTION_STRING, {
                     dbName: databaseName
                 });
 
